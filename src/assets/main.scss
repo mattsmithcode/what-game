@@ -1,0 +1,65 @@
+@use 'base';
+
+$max-page-width: 1280px;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    border-top: 1px solid var(--surface-border);
+    color: var(--text-color-secondary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    a,
+    a:active,
+    a:hover,
+    a:visited {
+        color: var(--text-color-secondary);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+}
+
+header {
+    background: var(--primary-color);
+    padding: 1rem;
+
+    div {
+        margin: 0 auto;
+        max-width: 1280px;
+
+        p {
+            color: var(--primary-color-text);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        p,
+        .icon {
+            display: inline-block;
+            line-height: 2rem;
+            vertical-align: bottom;
+        }
+    }
+}
+
+#app {
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: $max-page-width;
+    width: 100vw;
+}
