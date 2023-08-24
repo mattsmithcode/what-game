@@ -69,8 +69,11 @@
         played: model.value.played
     }));
 
+    const valid = computed(() => !!model.value.name.trim());
+
     defineExpose({
-        game
+        game,
+        valid
     });
 
     const constrainMaximum = () => {

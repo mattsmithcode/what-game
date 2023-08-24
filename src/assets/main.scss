@@ -63,3 +63,7 @@ header {
     max-width: $max-page-width;
     width: 100vw;
 }
+
+.break-word {
+    overflow-wrap: break-word;
+}

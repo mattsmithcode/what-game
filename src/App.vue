@@ -12,10 +12,14 @@
     <ConfirmDialog
         :draggable="false"
         :pt="{
+            content: {
+                class: 'break-word'
+            },
             message: {
-                class: 'text-3xl'
+                class: 'max-w-full text-3xl'
             }
         }"
+        class="max-w-screen"
         group="hero"
     />
 </template>

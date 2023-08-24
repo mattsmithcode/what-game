@@ -1,6 +1,6 @@
 <template>
     <div class="col-12 flex gap-2 p-2 pl-3">
-        <p class="my-auto">
+        <p class="break-word my-auto overflow-auto">
             {{ game.name }}
         </p>
         <p

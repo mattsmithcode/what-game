@@ -41,6 +41,7 @@
                 @click="dialogVisible = false"
             />
             <Button
+                :disabled="editForm && !editForm.valid"
                 autofocus
                 label="Save"
                 @click="save"
@@ -62,7 +63,7 @@
 
     const dialogModel = ref<Game>();
     const dialogVisible = ref(false);
-    const editForm = ref<{ game: Game }>();
+    const editForm = ref<{ game: Game, valid: boolean }>();
     const gamesStore = useGamesStore();
 
     const addGame = () => {
