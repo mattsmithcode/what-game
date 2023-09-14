@@ -67,3 +67,9 @@ header {
 .break-word {
     overflow-wrap: break-word;
 }
+
+.sub-title {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0;
+}

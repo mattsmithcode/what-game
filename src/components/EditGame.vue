@@ -100,10 +100,6 @@
 <style scoped lang="scss">
     @use 'primeflex/primeflex';
 
-    label {
-        font-weight: 700;
-    }
-
     .players {
         @include primeflex.styleclass('flex flex-column gap-2');
 

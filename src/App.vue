@@ -1,6 +1,9 @@
 <template>
     <GamePicker />
     <TabView>
+        <TabPanel header="Criteria">
+            <SelectionCriteria />
+        </TabPanel>
         <TabPanel header="Games">
             <GameList />
         </TabPanel>
@@ -28,6 +31,7 @@
     import AppSettings from '@/components/AppSettings.vue';
     import GameList from '@/components/GameList.vue';
     import GamePicker from '@/components/GamePicker.vue';
+    import SelectionCriteria from '@/components/SelectionCriteria.vue';
     import { useThemes } from '@/settings/theme';
     import ConfirmDialog from 'primevue/confirmdialog';
     import TabPanel from 'primevue/tabpanel';
